@@ -1,10 +1,10 @@
 import Express from 'express'
-import userRoutes from './userRoutes'
-import postsRoutes from './postsRoutes'
+import usersController from './usersController'
+import postsController from './postsController'
 
 const router = Express.Router()
 
-router.use('/users', userRoutes)
-router.use('/posts', postsRoutes)
+router.use('/users', usersController)
+router.use('/posts', postsController)
 
 export default router
