@@ -1,12 +1,10 @@
 <template>
-  <div>
+  <div class="user-item-container">
     <div class="user-name">
       {{ name }}
     </div>
 
-    <div class="user-id">
-      {{ id }}
-    </div>
+    <div class="user-id">ID:{{ id }}</div>
   </div>
 </template>
 
@@ -22,3 +20,20 @@ export default class UserItem extends Vue {
   name: string
 }
 </script>
+
+<style>
+.user-item-container {
+  width: 80%;
+  border: 1px solid;
+  margin: 8px auto 0;
+  display: flex;
+}
+
+.user-name {
+  color: red;
+}
+
+.user-id {
+  font-weight: bold;
+}
+</style>

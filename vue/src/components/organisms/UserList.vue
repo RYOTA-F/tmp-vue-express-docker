@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="user-list">
     <div v-for="user in users" :key="user.id">
       <UserItem :id="user.id" :name="user.name" />
     </div>
@@ -19,4 +19,4 @@ export default class UserList extends Vue {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
